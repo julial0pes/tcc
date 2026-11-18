@@ -12,30 +12,9 @@ Este repositório reúne tudo o que foi feito para montar o experimento: de onde
 
 ## Visão geral
 
-```mermaid
-flowchart LR
-  A["Promise+<br/>3.677 requisitos<br/>88 projetos"] --> B["Funil de seleção<br/>4 projetos<br/>179 funcionais"]
-  B --> C["Tradução<br/>(DeepL)"]
-  C --> D["Confirmação F/NF<br/>4 avaliações<br/>ficam 166"]
-  D --> E["Inserção dos defeitos<br/>pela autora<br/>132 com defeito<br/>34 sem defeito"]
-  E --> F["Validação<br/>rodada 1<br/>ChatGPT, Gemini, Claude"]
-  F -->|"101 aceitos"| J["Gabarito<br/>166 requisitos"]
-  F -->|"31 com discordância"| G["Refinamento<br/>pelo ChatGPT"]
-  G --> H["Validação<br/>rodada 2<br/>Gemini e Claude"]
-  H -->|"21 aceitos"| J
-  H -->|"10 com discordância"| I["Sugestão do Claude<br/>validada por<br/>ChatGPT e Gemini"]
-  I -->|"10 aceitos"| J
-  J -.-> K["Testes de detecção<br/>60 conversas<br/>(a realizar)"]
-  K -.-> L["Métricas e<br/>Kappa de Fleiss<br/>(a realizar)"]
-  classDef feito fill:#1F3864,color:#ffffff,stroke:#1F3864
-  classDef previsto fill:#ffffff,color:#1F3864,stroke:#1F3864,stroke-dasharray:4 3
-  class A,B,C,D,E,F,G,H,I,J feito
-  class K,L previsto
-```
-
-Caixas cheias são etapas concluídas; caixas tracejadas são etapas previstas. A mesma sequência, em três fases, aparece na figura abaixo, usada no TCC.
-
 ![Etapas da pesquisa em três fases](imagens/fluxo_etapas.png)
+
+Caixas cheias são etapas concluídas; caixas tracejadas são etapas previstas. É a mesma figura usada no TCC. O caminho de cada requisito na validação dos defeitos, com as quantidades de cada rodada, está na seção 8.
 
 ## Sumário
 
